@@ -1,0 +1,1102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+/* Start Home Section   */
+
+.home {
+    height: 100vh;
+    background-image: url(../images/slider/slider-01.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* start logo section  */
+
+
+.logo {
+    margin-left: 150px;
+    width: 30%;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    float: left;
+}
+
+.logo a {
+    color: #ff305b;
+    text-decoration: none;
+
+}
+
+/* End logo section  */
+
+/* start links section  */
+.links {
+    width: 50%;
+    float: right;
+    padding: 17px;
+}
+
+.links li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.links li:hover a {
+    color: #ff305b;
+}
+
+/* End links section  */
+
+/* Start content section  */
+
+.content {
+    text-align: center;
+    padding-top: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content h3 {
+
+    font-weight: 600;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.content h4 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* End content section  */
+
+
+
+@media screen and (max-width:600px) {
+
+    .content h1,
+    .content h4 {
+        font-size: 30px;
+
+    }
+
+    .content h4 {
+        font-size: 20px;
+
+    }
+
+    .content {
+        padding-top: 320px;
+    }
+}
+
+
+/* Ena Home Section   */
+
+
+
+/* Start About Section */
+
+.About {
+
+    height: 80vh;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.About .container {
+
+    height: 100%;
+}
+
+/* Start left-img section */
+.About .container .left-img {
+    width: 40%;
+    height: 100%;
+
+    float: left;
+    padding: 40px;
+}
+
+
+
+
+.inner-img {
+
+
+    border: 7px solid #555555;
+    border-radius: 5px;
+    position: relative;
+}
+
+.inner-img img {
+    width: 100%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+
+}
+
+
+
+
+.icons {
+    padding-top: 200px;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 20px;
+    top: 20px;
+    bottom: 0;
+    text-align: center;
+
+    bottom: -20;
+    right: -20;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.inner-img:hover .icons {
+
+    opacity: 1;
+
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+}
+
+.icons img:hover {
+    background-color: #ff305b;
+}
+
+/* End left-img section */
+
+/* Start right-info section */
+.About .container .right-info {
+    width: 60%;
+    height: 100%;
+
+    float: right;
+}
+
+.right-header h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    position: relative;
+
+}
+
+
+.right-header {
+    position: relative;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-bottom: #333 2px dotted;
+}
+
+.right-header h2::before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 9;
+    left: -10;
+
+}
+
+
+
+/* .right-header::after{
+    content: "";
+    width: 620px;
+    height: 5px;
+    background-color: #ff305b;
+    position: absolute;
+    top: ;
+  
+
+} */
+
+
+
+
+
+.right-bottom {
+    position: relative;
+
+
+}
+
+.right-bottom li {
+    float: left;
+    list-style-type: none;
+    padding: 20px;
+    width: 50%;
+
+}
+
+.right-bottom a {
+    text-decoration: none;
+
+}
+
+.right-bottom span {
+    color: #333;
+    font-weight: 500;
+}
+
+/* .right-bottom::before{
+    content: "";
+    width: 70%;
+    height: 5px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    
+} */
+.btn {
+
+    margin-left: 40px;
+}
+
+.btnn {
+    padding: 10px 24px;
+    background-color: #ff305b;
+    border: none;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.btnn:hover {
+    background-color: #EC2403;
+}
+
+.btnn img {
+    width: 15px;
+    height: 15px;
+}
+
+/* End right-info Section */
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .About .container .left-img {
+        width: 100%;
+    }
+
+    .About .container .right-info {
+        width: 100%;
+    }
+
+    .btnn {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    /* i know that it's not right but i will understand the solution and change it later  */
+    .About {
+        margin-bottom: 800px;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+    .About {
+        margin-bottom: 400px;
+    }
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .About {
+        margin-bottom: 200px;
+    }
+
+
+}
+
+
+
+
+/* End About Section */
+
+
+
+
+
+
+
+
+
+
+/* Start ourservices section */
+
+.oursercvices {
+
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.ourservices-header {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.oursercvices h2 {
+    font-size: 40px;
+    color: #333;
+    position: relative;
+}
+
+.oursercvices h2::before {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 100PX;
+    bottom: -20;
+    margin-left: 70px;
+    position: absolute;
+    padding: 4px 0;
+
+}
+
+
+.oursercvices h2::after {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 150PX;
+    bottom: -16.5;
+    right: 43.6333%;
+
+    position: absolute;
+
+
+}
+
+
+
+.ourservices-bottom {
+    color: black;
+}
+
+
+.ourservices-bottom img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.ourservices-bottom {
+    padding-top: 50px;
+}
+
+.service {
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding: 30px;
+
+}
+
+.service h3,
+.service p {
+    margin-bottom: 10px;
+}
+
+.service:hover img {
+    transform: scale(1.2);
+}
+
+.service:hover {
+    background-color: white;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .service {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .service {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .service {
+        width: 25%;
+    }
+}
+
+
+/* End ouservices section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start ourPortfolio section */
+
+
+
+.ourPortfolio {
+    margin-bottom: 50px;
+}
+
+.ourPortfolio-header {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ourPortfolio h2 {
+    font-size: 40px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.ourPortfolio h2::before {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 100PX;
+    bottom: -20;
+    margin-left: 70px;
+    position: absolute;
+    padding: 4px 0;
+
+}
+
+
+.ourPortfolio h2::after {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 150PX;
+    bottom: -16.5;
+    right: 43.6333%;
+
+    position: absolute;
+
+
+}
+
+
+
+
+
+.list {
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.list li {
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.down {}
+
+.item {
+    width: 33.3%;
+    float: left;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+
+.inner-item {
+    position: absolute;
+    left: 10;
+    right: 10;
+    top: 10;
+    bottom: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item .img-bottom {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 15;
+    right: 15;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.inner-item:hover {
+    opacity: 1;
+}
+
+.item:hover .img-bottom {
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .ourPortfolio-header {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:601px) {
+    .ourPortfolio-header {
+        width: 100%;
+    }
+
+
+    .item {
+        width: 50%;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:769px) {
+    .ourPortfolio-header {
+        width: 100%;
+    }
+
+
+    .item {
+        width: 33.3%;
+    }
+
+}
+
+
+/* End ourPortfolio section */
+
+
+
+
+/* Start counter section  */
+
+
+
+
+
+.counter {
+    background-color: #f1f1f1;
+
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.all-count {
+    text-align: center;
+    margin: auto;
+    /* hwa hna leh lma 3amalt height :100% zawad gamed gedan feh m3 an almafrod ya5od 3la 2ad elcontent bas ? */
+    height: 30%;
+    padding: 50px;
+}
+
+.count {
+    width: 25%;
+    float: left;
+    color: black;
+}
+
+
+.count img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.count h3 {
+
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .count {
+        width: 100%;
+    }
+
+    .all-count {
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width:601px) {
+    .count {
+        width: 50%;
+    }
+
+    .all-count {
+        height: 50%;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    .count {
+        width: 25%;
+    }
+
+    .all-count {
+        height: 30%;
+    }
+}
+
+/* End counter section  */
+
+/* Start ClientsFeedback section  */
+
+
+.ClientsFeedback {
+    margin-bottom: 50px;
+}
+
+.skew {
+    transform: skew(-18deg) ;
+    width: 150px;
+    height: 150px;
+    background-color: #EC2403;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.ClientsFeedback-header {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ClientsFeedback h2 {
+    font-size: 40px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.ClientsFeedback h2::before {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 100PX;
+    bottom: -20;
+    margin-left: 120px;
+    position: absolute;
+    padding: 4px 0;
+
+}
+
+
+.ClientsFeedback h2::after {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 150PX;
+    bottom: -16.5;
+    right: 43.6333%;
+
+    position: absolute;
+
+
+}
+
+.ClientsFeedbackdown {
+    text-align: center;
+
+
+    height: 400px;
+    padding-top: 30px;
+    transform: skew(100px);
+}
+
+.cart {
+    background-color: #f1f1f1;
+    width: 60%;
+    height: 250px;
+    margin: auto;
+    color: #333;
+    position: relative;
+}
+
+.leftcard {
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
+}
+
+.leftcard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.details {
+    position: absolute;
+    top: 40;
+    left: 20%;
+
+}
+
+.details h3 {}
+
+.details img {
+    width: 20px;
+    height: 20px;
+}
+
+/* End ClientsFeedback section  */
+
+
+
+
+
+/* Start blog section  */
+.ourblog {
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+}
+
+.ourblog-header {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ourblog h2 {
+    font-size: 40px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.ourblog h2::before {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 100PX;
+    bottom: -20;
+    margin-left: 70px;
+    position: absolute;
+    padding: 4px 0;
+
+}
+
+
+.ourblog h2::after {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 150PX;
+    bottom: -16.5;
+    right: 41%;
+
+    position: absolute;
+
+
+}
+
+.blog-content {
+
+    height: 80vh;
+
+}
+
+.blogg {
+    background-color: #fff;
+    width: 30.3%;
+    display: inline-block;
+    color: #333;
+    margin: 10px;
+}
+
+.blogg img {
+    width: 100%;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-info p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.blog-info a {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+.blog-info img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.blog-info a:hover {
+    color: #ff305b;
+}
+
+
+
+
+/* End blog section  */
+
+
+
+/* Start Contact-Us section  */
+
+
+
+.ourbContact-Uslog {
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+}
+
+.Contact-Us-header {
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Contact-Us h2 {
+    font-size: 40px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.Contact-Us h2::before {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 100PX;
+    bottom: -20;
+    margin-left: 70px;
+    position: absolute;
+    padding: 4px 0;
+
+}
+
+
+.Contact-Us h2::after {
+    content: "";
+    border: #ff305b solid;
+    border-width: 1px 0;
+    width: 150PX;
+    bottom: -16.5;
+    right: 44%;
+
+    position: absolute;
+
+
+}
+
+.Contact-Us-form {
+    width: 60%;
+
+
+
+    padding: 20px;
+    margin: auto;
+}
+
+
+.Contact-Us-form input {
+    width: 300px;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid #333;
+    margin: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.Contact-Us-form .subject {
+    width: 94%;
+    margin-bottom: 20px;
+}
+
+textarea {
+    border: 2px solid #333;
+    width: 94%;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.Contact-Us-form button {
+    margin: 20px;
+    color: white;
+}
+
+/* End Contact-Us section  */
+
+
+
+
+
+
+
+
+/* Start footer section  */
+.footer {
+    background-color: #333;
+    height: 20vh;
+}
+
+
+
+.inner-footer {
+    width: 80%;
+
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+
+
+.inner-footer img {
+
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+
+}
+
+.inner-footer a {
+    text-decoration: none;
+    color: #ff305b;
+}
+
+/* End footer section  */
+
+/* shared classes */
+
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+.rosecolor {
+    color: #ff305b;
+}
+
+.greycolor {
+    color: #555555;
+}
+
+
+
+.links .rosecolor {
+    color: #ff305b;
+}
+
+.mrg-bottom {
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
